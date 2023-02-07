@@ -19,11 +19,16 @@
 	<div class="main">  	
 		<input type="checkbox" id="chk" aria-hidden="true">
 
+
+		</script>
+
 			<div class="signup">
 				<form>
 					<label for="chk" aria-hidden="true">Login</label>
-					<input type="text" name="txt" placeholder="User name" required="">
-					<input type="password" name="pswd" placeholder="Password" required="">
+					<input type="email" name="txt" placeholder="User name" required=""
+					title="Please enter a VALID Email Address">
+					<input type="password" name="pswd" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+					title="Password must contain: upper and lowercase, minimum of 8 characters, and at least one or more special characters">
 					<button>Login</button>
 				</form>
 			</div>
@@ -31,7 +36,9 @@
 			<div class="login">
 				<form>
 					<label for="chk" aria-hidden="true">No account?</label>
-					<button>Edi gawa ka</button>
+					<input type="email" name="txt" placeholder="User name" required="">
+					<input type="password" name="pswd" placeholder="Password" required="">
+					<button>Create</button>
 				</form>
 </html>
 
